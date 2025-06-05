@@ -1,4 +1,4 @@
-@Smoke
+
 Feature: Cart Functionality
 
   Scenario: User should be able to navigate to cart page
@@ -7,7 +7,7 @@ Feature: Cart Functionality
     And User clicks on the cart icon
     Then User should see the cart page
 
-  @TC005
+  @TC005 @smoke
   Scenario: User want to add multiple products
     Given User is on SauceDemo login page
     When User enters username "standard_user" and password "secret_sauce"

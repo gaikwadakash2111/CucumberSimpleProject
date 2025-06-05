@@ -1,4 +1,4 @@
-@Smoke
+
 Feature: SauceDemo Login
 
   @TC001
@@ -7,7 +7,7 @@ Feature: SauceDemo Login
     When User enters username "standard_user" and password "secret_sauce"
     Then User should be logged in successfully
 
-  @TC002
+  @TC002 @smoke  
   Scenario: Verify error message upon invalid Username
     Given User is on SauceDemo login page
     When User enters username "standard_user" and password "Demo"
